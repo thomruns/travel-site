@@ -1,5 +1,5 @@
 var gulp = require('gulp'),
-watch = require('gulp-watch'),
+watch = require('gulp-watch'), //these are gulp plugins
 postcss = require('gulp-postcss'),
 autoprefixer = require('autoprefixer'),
 cssvars = require('postcss-simple-vars'),
