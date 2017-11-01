@@ -4,6 +4,9 @@
 @import "base/_mixins.css"; /* mixins */
 @import "modules/_large-hero.css"; /* styling for large-hero section */
 @import "modules/_btn.css"; /* styling for buttons */
+@import "modules/_wrapper.css"; /* spacing and margins */
+@import "modules/_page-section.css"; /* spacing between page sections */
+@import "modules/_headline.css"; /* styling headlines */
 
 
 
