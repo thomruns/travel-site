@@ -1,3 +1,7 @@
+/* This file contains all the npm installs required to run the site
+*  Note that versions are not current, but were selected to sync
+*   with versions course instructor was using at the time of writing.
+*/
 {
   "name": "travel-site",
   "version": "1.0.0",
@@ -9,7 +13,7 @@
     "picturefill": "3.0.2",
     "waypoints": "4.0.1"
   },
-  "devDependencies": {
+  "devDependencies": { 
     "autoprefixer": "7.1.2",
     "babel-core": "6.25.0",
     "babel-loader": "7.1.1",

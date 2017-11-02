@@ -460,6 +460,11 @@ img {
     height: auto;
 }
 
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
 /* global styles */
 
 /* variables for colors etc */
@@ -562,6 +567,7 @@ img {
     padding-right: 18px;
     max-width: 1200px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .wrapper--medium {
@@ -646,5 +652,32 @@ img {
 
 /* styling headlines */
 
+.row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+@media (min-width: 800px) {
+        .row__medium-4 {
+            float: left;
+            width: 33.33%;
+        }
+    
+        .row__medium-8 {
+            float: left;
+            width: 66.66%;
+        }
+    }
+
+.row--gutters {
+        margin-right: -65px;
+    }
+
+.row--gutters > div {
+        padding-right: 65px;
+    }
+
+/* styling for row class */
 
 
