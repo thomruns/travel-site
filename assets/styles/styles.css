@@ -8,6 +8,8 @@
 @import "modules/_page-section.css"; /* spacing between page sections */
 @import "modules/_headline.css"; /* styling headlines */
 @import "modules/_row.css"; /* styling for row class */
-@import "modules/_generic-content-container.css" /* generic content styles */
+@import "modules/_generic-content-container.css"; /* generic content styles */
+@import "modules/_section-title.css"; /* features section styles */
+@import "modules/_feature-item.css"; /* features subsection styles */
 
 
