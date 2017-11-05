@@ -11,5 +11,6 @@
 @import "modules/_generic-content-container.css"; /* generic content styles */
 @import "modules/_section-title.css"; /* features section styles */
 @import "modules/_feature-item.css"; /* features subsection styles */
+@import "modules/_testimonial.css" /* testimonials section styles */
 
 
