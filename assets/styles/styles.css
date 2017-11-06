@@ -1,16 +1,17 @@
 @import "normalize.css";
-@import "base/_variables.css"; /* variables for colors etc */
-@import "base/_mixins.css"; /* mixins */
-@import "base/_global.css"; /* global styles */
-@import "modules/_large-hero.css"; /* styling for large-hero section */
-@import "modules/_btn.css"; /* styling for buttons */
-@import "modules/_wrapper.css"; /* spacing and margins */
-@import "modules/_page-section.css"; /* spacing between page sections */
-@import "modules/_headline.css"; /* styling headlines */
-@import "modules/_row.css"; /* styling for row class */
-@import "modules/_generic-content-container.css"; /* generic content styles */
-@import "modules/_section-title.css"; /* features section styles */
-@import "modules/_feature-item.css"; /* features subsection styles */
-@import "modules/_testimonial.css" /* testimonials section styles */
+@import "base/_variables"; /* variables for colors etc */
+@import "base/_mixins"; /* mixins */
+@import "base/_global"; /* global styles */
+@import "modules/_large-hero"; /* styling for large-hero section */
+@import "modules/_btn"; /* styling for buttons */
+@import "modules/_wrapper"; /* spacing and margins */
+@import "modules/_page-section"; /* spacing between page sections */
+@import "modules/_headline"; /* styling headlines */
+@import "modules/_row"; /* styling for row class */
+@import "modules/_generic-content-container"; /* generic content styles */
+@import "modules/_section-title"; /* features section styles */
+@import "modules/_feature-item"; /* features subsection styles */
+@import "modules/_testimonial"; /* testimonials section styles */
+@import "modules/_sprite"; /* sprite icon gulp-generated styles (sprites.js) */
 
 
