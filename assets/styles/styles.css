@@ -13,6 +13,8 @@
 @import "modules/_feature-item"; /* features subsection styles */
 @import "modules/_testimonial"; /* testimonials section styles */
 @import "modules/_sprite"; /* sprite icon gulp-generated styles (sprites.js) */ 
-@import "modules/_site-footer" /* footer styling */
+@import "modules/_site-footer"; /* footer styling */
+@import "modules/_site-header"; /* header styling */
+@import "modules/_primary-nav"; /* navigation styling */
 
 
