@@ -4,14 +4,15 @@
 @import "base/_global"; /* global styles */
 @import "modules/_large-hero"; /* styling for large-hero section */
 @import "modules/_btn"; /* styling for buttons */
-@import "modules/_wrapper"; /* spacing and margins */
-@import "modules/_page-section"; /* spacing between page sections */
+@import "modules/_wrapper"; /* spacing and margins */ 
+@import "modules/_page-section"; /* spacing between page sections */ 
 @import "modules/_headline"; /* styling headlines */
 @import "modules/_row"; /* styling for row class */
-@import "modules/_generic-content-container"; /* generic content styles */
+@import "modules/_generic-content-container"; /* generic content styles */ 
 @import "modules/_section-title"; /* features section styles */
 @import "modules/_feature-item"; /* features subsection styles */
 @import "modules/_testimonial"; /* testimonials section styles */
-@import "modules/_sprite"; /* sprite icon gulp-generated styles (sprites.js) */
+@import "modules/_sprite"; /* sprite icon gulp-generated styles (sprites.js) */ 
+@import "modules/_site-footer" /* footer styling */
 
 
