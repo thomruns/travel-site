@@ -1214,6 +1214,10 @@ a {
     }
   }
 
+.site-header__menu-content--is-visible {
+            display: block;
+        }
+
 /* header styling */
 
 .primary-nav--pull-right {
