@@ -17,5 +17,7 @@
 @import "modules/_site-header"; /* header styling */
 @import "modules/_primary-nav"; /* navigation styling */
 @import "modules/_reveal-item"; /* reveals the feature section */
+@import "modules/_modal"; /* styling for modal element */
+@import "modules/_social-icons"; /* styling for social icons */
 
 
