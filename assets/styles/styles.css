@@ -16,5 +16,6 @@
 @import "modules/_site-footer"; /* footer styling */
 @import "modules/_site-header"; /* header styling */
 @import "modules/_primary-nav"; /* navigation styling */
+@import "modules/_reveal-item"; /* reveals the feature section */
 
 
