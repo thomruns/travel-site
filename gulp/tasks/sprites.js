@@ -9,11 +9,24 @@
 var gulp = require('gulp'), //npm module
 svgSprite = require('gulp-svg-sprite'), //npm module
 rename = require('gulp-rename'), //npm module
-del = require('del'); //npm module
+del = require('del'), //npm module
+svg2png = require('gulp-svg2png');
 
 var config = {
+    shape: {
+        spacing: {
+            padding: 1
+        }
+    },
     mode: {
         css: {
+            variables: {
+                replaceSvgWithPng: function() {
+                    return function(sprite, render) {
+                       return render(sprite).split('.svg').join('.png'); 
+                    }
+                }
+            },
             sprite: 'sprite.svg',
             render: {
                 css: {
@@ -37,8 +50,16 @@ gulp.task('createSprite', ['beginClean'], function() { // beginClean should run 
         .pipe(gulp.dest('./temp/sprite/')); //where to put the assembled svg file
 });
 
-gulp.task('copySpriteGraphic', ['createSprite'], function() {
-    return gulp.src('./temp/sprite/css/**/*.svg')
+//create a png file from svg to serve to browsers that don't support png
+gulp.task('createPngCopy',['createSprite'], function() {
+    return gulp.src('./temp/sprite/css/*.svg')
+    .pipe(svg2png())
+    .pipe(gulp.dest('./temp/sprite/css'));
+});
+
+//move the created sprite file from temp folder to images folder
+gulp.task('copySpriteGraphic', ['createPngCopy'], function() {
+    return gulp.src('./temp/sprite/css/**/*.{svg,png}')
         .pipe(gulp.dest('./assets/images/sprites'));
 });
 
@@ -58,4 +79,4 @@ gulp.task('endClean', ['copySpriteGraphic', 'copySpriteCSS'], function(){
 * note that copySpriteCSS has a dependency of createSprite that
 * runs first. Then, copySprite is run after that task is complete
 */
-gulp.task('icons', ['beginClean', 'createSprite', 'copySpriteGraphic', 'copySpriteCSS', 'endClean']); 
+gulp.task('icons', ['beginClean', 'createSprite', 'createPngCopy', 'copySpriteGraphic', 'copySpriteCSS', 'endClean']); 

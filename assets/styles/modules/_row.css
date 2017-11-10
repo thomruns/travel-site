@@ -97,7 +97,7 @@
   }
   
   /* Begin Equal Height Rules */
-  &--equal-height-at-medium {
+  .flexbox &--equal-height-at-medium {
     @mixin atMedium {
       display: flex;
     }
@@ -108,8 +108,8 @@
     }
 
   }
-
-  &--equal-height-at-large {
+/* adding .flexbox class invokes modernizr rule to replace flexbox w floats */
+.flexbox &--equal-height-at-large {
     @mixin atLarge {
       display: flex;
     }
