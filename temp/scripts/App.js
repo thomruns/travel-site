@@ -11754,7 +11754,6 @@ var Modal = function () {
         value: function openModal() {
             this.modal.addClass("modal--is-visible");
             return false;
-            console.log("Clicked the button");
         }
     }, {
         key: "closeModal",
