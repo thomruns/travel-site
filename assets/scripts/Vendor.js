@@ -1,0 +1,1 @@
+import 'lazysizes'; //import lazysizes node module
